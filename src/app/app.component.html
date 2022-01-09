@@ -3,3 +3,9 @@
 <app-chield [parentValue]="parentData" [parentValueS]="data2" [pvalue]="users" [data]="data"></app-chield>
 <button (click)="updateDataValue()">Click to Update Data Value</button>
 
+
+<!-- MAKING CHIELD2 COMPONET FOR-->  <!--send chield component value to parent  -->
+
+                <!-- GET CHIELD COMPONENT DATA IN PARENT COMPONENT  -->
+<app-chield2 (updateDataEvent)="getChieldValue($event)"></app-chield2>
+<h2>{{getData}}</h2>

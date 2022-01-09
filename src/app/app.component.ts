@@ -15,4 +15,12 @@ export class AppComponent {
   updateDataValue(){
     this.data=Math.floor(Math.random()*10);
   }
+
+// GET CHIELD COMPONENT VALUE AND PRINT IN PARENT COMPONENT
+getData="";
+getChieldValue(item:string){
+console.log(item);
+this.getData=item;
+}
+
 }
