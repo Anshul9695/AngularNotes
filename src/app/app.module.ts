@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AngularFunctionComponent } from './angular-function/angular-function.component';
 import { ChieldComponent } from './chield/chield.component';
 import { Chield2Component } from './chield2/chield2.component';
+import {FormsModule} from "@angular/forms"
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Chield2Component } from './chield2/chield2.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

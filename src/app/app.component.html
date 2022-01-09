@@ -7,5 +7,17 @@
 <!-- MAKING CHIELD2 COMPONET FOR-->  <!--send chield component value to parent  -->
 
                 <!-- GET CHIELD COMPONENT DATA IN PARENT COMPONENT  -->
-<app-chield2 (updateDataEvent)="getChieldValue($event)"></app-chield2>
+<app-chield2 (updateDataEvent)="getChieldValue($event)" (chieldValue)="getValues($event)" (getNumberValue)="dataValue($event)"></app-chield2>
 <h2>{{getData}}</h2>
+<h3>{{getttingData}}</h3>
+<h4>{{numberValue}}</h4>
+
+
+
+<!-- TWO WAY BINDING CONCEPT IN HERE..  same time me likho and result dekho thats called two way binding. -->
+  <h1>Two way Binding is here........................</h1>
+<input type="text" [(ngModel)]="name"  placeholder="Enter Your Name:"/><b>{{name}}</b><br/>
+<input type="text" [(ngModel)]="father" placeholder="Enter Your Father:"/><b>{{father}}</b><br/>
+<textarea [(ngModel)]="address" placeholder="Enter Your Address:"></textarea><b>{{address}}</b><br/>
+<input type="number" [(ngModel)]="mob" placeholder="Enter Your Mob Number:"/><b>{{mob}}</b><br/>
+<input type="gmail" [(ngModel)]="gmail" placeholder="Enter Your Gmail:"/><b>{{gmail}}</b><br/>

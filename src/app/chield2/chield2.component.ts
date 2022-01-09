@@ -9,6 +9,8 @@ export class Chield2Component implements OnInit {
 
   constructor() { }
 @Output() updateDataEvent=new EventEmitter<string>();
+@Output() chieldValue=new EventEmitter<string>();
+@Output() getNumberValue=new EventEmitter<string>();
   ngOnInit(): void {
   }
 

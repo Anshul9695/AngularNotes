@@ -23,4 +23,21 @@ console.log(item);
 this.getData=item;
 }
 
+getttingData="";
+getValues(data:string){
+this.getttingData=data;
+}
+numberValue='';
+dataValue(val:string){
+this.numberValue=val;
+}
+
+//TWO WAY BINDING CONCEPT IS HERE...............
+name:any;
+father:any;
+address:any;
+mob:any;
+gmail:any;
+
+
 }

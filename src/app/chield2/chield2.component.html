@@ -1,4 +1,12 @@
-<h2>CHIELD COMPONENT TO PARENT COMPONENT DATA TRANSFER-->chield se parent ko data send karna</h2>
+<h2>CHILD COMPONENT TO PARENT COMPONENT DATA TRANSFER-->child se parent ko data send karna</h2>
   
 <input type="text" #box />
 <button (click)="updateDataEvent.emit(box.value)">Click to Update Value</button>
+
+<br/><br/>
+<input type="text" #box2 />
+<button (click)="chieldValue.emit(box2.value)">find Value !!</button>
+
+<br/>
+<input type="text" #numb />
+<button (click)="getNumberValue.emit(numb.value)">Get Number</button>
