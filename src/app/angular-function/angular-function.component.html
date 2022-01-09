@@ -1,0 +1,109 @@
+<!-- property binding  -->
+<!-- <h2>its a property binding concept its a better concept in angular always use property binding</h2>
+<input type="text" [value]=userName [disabled]=disable />
+
+<h4> string inter proletion called  this ->double curly breses its a not good concept becouse its work<br/>
+    only in string and number its a not worked with boolean and other value
+</h4>
+<input type="text" value={{userName}} disabled={{disable}}/> -->
+
+<!-- <h3>if else Condition</h3>
+<p *ngIf="show;else elseBlock">
+    if condition is running
+</p>
+<ng-template #elseBlock>
+    <p>this is the else condion is running here..</p>
+</ng-template> -->
+
+
+<!-- <h3>else if condition</h3>
+<ng-template [ngIf]="color==='red'">
+coler is red
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+your color is green
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    your color is blue
+</ng-template> -->
+
+<!-- <div [ngSwitch]="day">
+<h1 *ngSwitchCase="'sunday'">its a sunday today holyday in office</h1>
+<h2 *ngSwitchCase="'monday'">its a monday today</h2>
+<h3 *ngSwitchCase="'tuesday'">its a tuesday today</h3>
+<h4 *ngSwitchCase="'wednesday'">its a wednesday</h4>
+<h5 *ngSwitchCase="'thirsday'">its a thirsday today</h5>
+<h6 *ngSwitchCase="'friday'">its a friday today</h6>
+<h3 *ngSwitchCase="'suterday'">its a suterday today its a holyday in my office</h3>
+<h1 *ngSwitchDefault>Its a not a day its a other value</h1>
+</div> -->
+
+<!-- FOR LOOP IN ANGULAR  -->
+<!-- <h1 *ngFor="let item of users">
+{{item}}
+</h1> -->
+
+<!-- FOR LOOP WITH ARRAY OF OBJECT  -->
+<!-- <div *ngFor='let item of detailsValue'>
+<p>{{item.name}}</p>
+<p>{{item.address}}</p>
+<p>{{item.mob}}</p>
+</div> -->
+
+
+<!-- GETTING VALUE IN ARRAY OF OBJECT  getting value in json and print in array  -->
+<!-- <table border="1">
+    <tr>
+        <td>ID</td>
+        <td>name</td>
+        <td>father</td>
+        <td>mother_name</td>
+        <td>address</td>
+        <td>employee.mob</td>
+        <td>localAddress</td>
+    </tr>
+    <tr *ngFor="let employee of Employee ">
+        <td>{{employee.ID}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.father}}</td>
+        <td>{{employee.mother_name}}</td>
+        <td>{{employee.address}}</td>
+        <td>{{employee.mob}}</td>
+        <td>{{employee.localAddress}}</td>
+    </tr>
+</table> -->
+
+
+
+<!-- NESTED FOR LOOP USING  -->
+<!-- <ol *ngFor="let cmpEmployee of companyEmployee">
+<li>{{cmpEmployee.ID}}</li>
+<li>{{cmpEmployee.name}}</li>
+<b>Address:</b>
+<ul *ngFor="let empaddress of cmpEmployee.address">
+        <li>{{empaddress}}</li>
+</ul>
+<b>Social Account:</b>
+<ul *ngFor="let social of cmpEmployee.social">
+    <li>{{social}}</li>
+</ul>
+</ol> -->
+
+
+<!-- MULIT DIMENTIONAL ARRAY USING FOR LOOP -->
+<!-- <ol *ngFor="let worker of cmpWorkers">
+    <li>{{worker.ID}}</li>
+    <li>{{worker.name}}</li>
+    <b>ADDRESS:</b>
+    <ul *ngFor="let workeraddress of worker.address">
+            <li>{{workeraddress}}</li>
+    </ul>
+    <b>SOCIAL ACCOUNTS:</b>
+    <ul *ngFor="let workersocialaccount of worker.social">
+        <li>{{workersocialaccount}}</li>
+    </ul>
+    <b>ID PROOF</b>
+    <ul *ngFor="let workeridProofCard of worker. IdProof">
+        <li>{{workeridProofCard}}</li>
+    </ul>
+    </ol> -->
